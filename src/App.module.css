@@ -10,7 +10,7 @@
   position: relative;
   overflow: hidden;
   display: flex;
-  max-height: 100vh;
+  height: 100vh;
 }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -39,5 +39,11 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .container {
+    overflow-y: scroll;
   }
 }

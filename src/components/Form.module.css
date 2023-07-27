@@ -79,14 +79,14 @@ input {
   color: white;
   width: 11rem;
   position: absolute;
-  top: 76%;
+  top: 73%;
   left: 6%;
 }
 .date {
   color: white;
   width: 4rem;
   position: absolute;
-  top: 76%;
+  top: 73%;
   left: 80%;
 }
 .back {
@@ -102,14 +102,45 @@ input {
   left: 75%;
 }
 
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 426px) {
+  p {
+    font-size: 12px;
+  }
+  .front {
+    left: 10%;
+    top: 20%;
+    z-index: 1;
+  }
+  .back {
+    left: 20%;
+    top: 5%;
+    z-index: 0;
+  }
   .img1 {
-    width: 90%;
+    width: 83%;
+  }
+  .img2 {
+    width: 96%;
   }
   .cardnum {
     left: 4%;
   }
   .cardnumP {
     font-size: 16px;
+  }
+  .date {
+    left: 70%;
+  }
+  .form {
+    left: 12%;
+    top: 43%;
+    width: 15rem;
+  }
+  label,
+  input {
+    font-size: 12px;
+  }
+  .input {
+    width: 18rem;
   }
 }

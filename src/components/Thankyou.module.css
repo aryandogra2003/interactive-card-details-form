@@ -21,3 +21,52 @@
   cursor: pointer;
   width: 20rem;
 }
+
+@media only screen and (max-width: 426px) {
+  p {
+    font-size: 12px;
+  }
+  .front {
+    left: 10%;
+    top: 20%;
+    z-index: 1;
+  }
+  .back {
+    left: 20%;
+    top: 5%;
+    z-index: 0;
+  }
+  .img1 {
+    width: 83%;
+  }
+  .img2 {
+    width: 96%;
+  }
+  .cardnum {
+    left: 4%;
+  }
+  .cardnumP {
+    font-size: 16px;
+  }
+  .date {
+    left: 70%;
+  }
+  .form {
+    left: 12%;
+    top: 43%;
+    width: 15rem;
+  }
+  label,
+  input {
+    font-size: 12px;
+  }
+  .input {
+    width: 18rem;
+  }
+
+  .container {
+    width: -webkit-fill-available;
+    top: 47%;
+    left: 0;
+  }
+}

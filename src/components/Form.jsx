@@ -119,7 +119,7 @@ const Form = (props) => {
         </div>
       </div>
       <div className={classes.back}>
-        <img src={Cardback} alt="card back" />
+        <img src={Cardback} alt="card back" className={classes.img2} />
         <div className={classes.cvc}>
           <p>{!isCvcTouched && !isCvc ? "000" : Cvc.current.value}</p>
         </div>

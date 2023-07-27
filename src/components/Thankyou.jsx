@@ -15,7 +15,7 @@ const Thankyou = (props) => {
   return (
     <>
       <div className={classes.front}>
-        <img src={CardFront} alt="card front" />
+        <img src={CardFront} alt="card front" className={classes.img1} />
         <img src={CardLogo} alt="card logo" className={classes.cardlogo} />
         <div className={classes.cardnum}>
           <p style={{ fontSize: 22 }}>{num}</p>
@@ -28,7 +28,7 @@ const Thankyou = (props) => {
         </div>
       </div>
       <div className={classes.back}>
-        <img src={Cardback} alt="card back" />
+        <img src={Cardback} alt="card back" className={classes.img2} />
         <div className={classes.cvc}>
           <p>{Cvc}</p>
         </div>
