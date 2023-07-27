@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import classes from "./App.module.css";
+import UserForm from "./components/Form";
+import bgMain from "./images/bg-main-desktop.png";
+import Thankyou from "./components/Thankyou";
 
 function App() {
+  const [myBool, setmyBool] = useState(true);
+
+  function toggleBool() {
+    setmyBool(!myBool);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={classes.container}>
+      <img src={bgMain} alt="bg main desktop" />
+      {myBool ? (
+        <UserForm toggleBool={toggleBool} />
+      ) : (
+        <Thankyou toggleBool={toggleBool} />
+      )}
     </div>
   );
 }

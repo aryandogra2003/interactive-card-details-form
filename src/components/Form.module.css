@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&display=swap");
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px;
+  margin: 18px;
+  gap: 0.7rem;
+  /* background-color: beige; */
+  height: fit-content;
+  width: 30rem;
+  position: absolute;
+  left: 55%;
+  top: 15%;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+label,
+input {
+  color: hsl(278, 68%, 11%);
+  font-size: 18px;
+}
+.formdetails {
+  display: flex;
+  flex-direction: column;
+}
+.input {
+  padding: 8px;
+  border-radius: 8px;
+  width: 20rem;
+}
+.inputDate {
+  padding: 8px;
+  border-radius: 8px;
+  width: 3rem;
+}
+.btn {
+  padding: 18px;
+  border-radius: 8px;
+  background-color: hsl(278, 68%, 11%);
+  color: white;
+  max-width: 100%;
+  cursor: pointer;
+  width: 20rem;
+}
+.btn:disabled {
+  cursor: not-allowed;
+}
+
+/* card styles */
+.errorText {
+  color: red;
+}
+
+.front {
+  position: absolute;
+  left: 12%;
+  top: 15%;
+}
+.cardlogo {
+  position: absolute;
+  top: 12%;
+  left: 6%;
+}
+.cardnum {
+  color: white;
+  width: 17rem;
+  position: absolute;
+  top: 42%;
+  left: 19%;
+  /* background: aquamarine; */
+  text-align: center;
+}
+.cardnumP {
+  font-size: 22px;
+}
+.cardname {
+  color: white;
+  width: 11rem;
+  position: absolute;
+  top: 76%;
+  left: 6%;
+}
+.date {
+  color: white;
+  width: 4rem;
+  position: absolute;
+  top: 76%;
+  left: 80%;
+}
+.back {
+  position: absolute;
+
+  left: 17%;
+  top: 52%;
+}
+.cvc {
+  color: white;
+  position: absolute;
+  top: 37%;
+  left: 75%;
+}
+
+@media only screen and (max-width: 376px) {
+  .img1 {
+    width: 90%;
+  }
+  .cardnum {
+    left: 4%;
+  }
+  .cardnumP {
+    font-size: 16px;
+  }
+}
